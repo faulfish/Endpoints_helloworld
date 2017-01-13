@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% block head_title %}{% endblock %}
+	<meta content="text/html" charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="/images/logo.png">
+	<meta property="og:description" content="">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all'/>
+	<link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all'/>
+
+	<!--
+	<link rel='stylesheet' href='css/edd_templates/edd.css' type='text/css' media='all'/>
+	-->
+
+	{% block head_css %}{% endblock %}
+</head>
+
+<body>
+	{% block body_content %}{% endblock %}
+
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	{% block body_js %}{% endblock %}
+</body>
+</html>
